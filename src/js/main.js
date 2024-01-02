@@ -1,9 +1,6 @@
 import 'the-new-css-reset/css/reset.css';
 import '../styles/style.css';
+import buildLevel from './dom';
+import { LEVELS } from './levels';
 
-const container = document.querySelector('#container');
-
-const h1 = document.createElement('h1');
-h1.textContent = 'SETUP';
-
-container.append(h1);
+buildLevel(LEVELS[0]);
